@@ -10,7 +10,6 @@ import time
 import threading
 
 video_camera = VideoCamera(flip=False)
-
 app = Flask(__name__)
 
 @app.route('/')
