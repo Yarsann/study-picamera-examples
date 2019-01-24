@@ -8,7 +8,7 @@ import cv2
 
 
 net = cv2.dnn.readNetFromCaffe('/home/pi/models/MobileNetSSD_deploy.prototxt',
-       '/home/pi/models/MobileNetSSD_deploy.caffemodel')
+        '/home/pi/models/MobileNetSSD_deploy.caffemodel')
 
 
 class PersonDetector(object):
