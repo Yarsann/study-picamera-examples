@@ -9,9 +9,9 @@ from flask import Flask, render_template, Response
 import time
 import threading
 
-video_camera = /dev/video0(flip=False)
-video_camera = /dev/video1(flip=False)
-video_camera = /dev/video2(flip=False)
+video_camera = video0(flip=False)
+video_camera = video1(flip=False)
+video_camera = video2(flip=False)
 
 
 app = Flask(__name__)
