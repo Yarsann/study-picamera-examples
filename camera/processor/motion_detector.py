@@ -1,5 +1,5 @@
 from __future__ import print_function
-from imutils.video.pivideostream import WebcamVideoStream
+from imutils.video.Webcamvideostream import WebcamVideoStream
 import imutils
 import time
 import numpy as np
