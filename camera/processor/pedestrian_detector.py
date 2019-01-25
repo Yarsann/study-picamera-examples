@@ -1,5 +1,5 @@
 from __future__ import print_function
-from imutils.video.pivideostream import PiVideoStream
+from imutils.video.pivideostream import WebcamVideoStream
 from imutils.object_detection import non_max_suppression
 import imutils
 import time
@@ -10,7 +10,7 @@ import cv2
 
 class PedestrianDetector(object):
     def __init__(self, flip = True):
-        self.vs = PiVideoStream(resolution=(800, 608)).start()
+        self.vs = WebcamVideoStream(resolution=(800, 608)).start()
         self.flip = flip
         time.sleep(2.0)
         
