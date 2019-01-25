@@ -1,4 +1,4 @@
-from imutils.video.pivideostream import PiVideoStream
+from imutils.video.pivideostream import WebcamVideoStream
 import time
 import datetime
 import numpy as np
