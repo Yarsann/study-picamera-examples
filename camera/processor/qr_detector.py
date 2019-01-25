@@ -1,4 +1,4 @@
-from imutils.video.pivideostream import PiVideoStream
+from imutils.video.pivideostream import WebcamVideoStream
 import time
 from datetime import datetime
 import numpy as np
@@ -8,7 +8,7 @@ from pyzbar import pyzbar
 
 class QRDetector(object):
     def __init__(self, flip = False):
-        self.vs = PiVideoStream(resolution=(400, 304), framerate=3).start()
+        self.vs = WebcamVideoStream(resolution=(400, 304), framerate=3).start()
         self.flip = flip
         time.sleep(2.0)
 
