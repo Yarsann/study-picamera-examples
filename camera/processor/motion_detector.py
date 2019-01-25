@@ -1,5 +1,5 @@
 from __future__ import print_function
-from imutils.video.pivideostream import PiVideoStream
+from imutils.video.pivideostream import WebcamVideoStream
 import imutils
 import time
 import numpy as np
@@ -8,7 +8,7 @@ import cv2
 
 class MotionDetector(object):
     def __init__(self, flip = True):
-        self.vs = PiVideoStream(resolution=(400, 304), framerate=16).start()
+        self.vs = WebcamVideoStream(resolution=(400, 304), framerate=16).start()
         self.flip = flip
         time.sleep(2.0)
 
