@@ -39,3 +39,4 @@ class SimpleStreamer(object):
         ret, frame = self.vc.read()
         ret, image = self.get_output_image(frame)
         return image.tobytes()
+
