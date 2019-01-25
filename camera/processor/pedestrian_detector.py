@@ -1,5 +1,5 @@
 from __future__ import print_function
-from imutils.video.Webcamvideostream import WebcamVideoStream
+from imutils.video.WebcamVideoStream import WebcamVideoStream
 from imutils.object_detection import non_max_suppression
 import imutils
 import time
